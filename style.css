@@ -405,6 +405,8 @@ nav .fa.fa{
         padding-top: 50px;
 
     }
+    .services-list div{
+        font-size: 11px;
 }
 #msg{
     color: "#b40000";
