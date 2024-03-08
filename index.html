@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Himanshu Shekhar Singh</title>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css"
     <script src="https://kit.fontawesome.com/088a1f80e8.js" crossorigin="anonymous"></script>
     <link 
@@ -119,7 +118,7 @@
                     <p>
                         The website where you can see any movies/series Anywhere Anytime for Free.
                     </p>
-                    <a href="movies2watch.cc" style="line-height: 2;"><i class="fa fa-solid fa-paperclip"></i></a>
+                    <a href="#" style="line-height: 2;"><i class="fa fa-solid fa-paperclip"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -153,12 +152,14 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub_title3"  style="line-height: 2;">Contact Me</h1>
-                <p><i class="fa fa-solid fa-paper-plane"></i> himanshu0499shekhar@gmail.com</p>
+                <p><i class="fa fa-solid fa-paper-plane"></i> himansingh@google.com</p>
                 <p><i class="fa fa-solid fa-phone"></i> 6201517191</p>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/s.i.n.g.h_himanshu?igsh=Z2FkYWUxZHU1amdu"><i class="fa fa-brands fa-instagram"></i></a>
                     <a href="https://x.com/Himansingh099?t=a6iYdUUiZELftauItL1SxQ&s=08"><i class="fa fa-brands fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/himanshu-shekhar-singh-990a89232"><i class="fa fa-brands fa-linkedin"></i></a>
+                    <a href="www.linkedin.com/in/
+                    himanshu-shekhar-singh-990a89232
+                    "><i class="fa fa-brands fa-linkedin"></i></a>
                     <a href="himanshu0499shekhar@gmail.com"><i class="fa fa-solid fa-envelope"></i></a>
                 </div>
                 <a href="Himanshu_Singh Resume.pdf" download class="btn btn2">Download CV</a>
@@ -167,7 +168,7 @@
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="Email" name="Email" placeholder="Your Email" required>
-                    <textarea type="Messages" rows="6" placeholder="Your Messages"></textarea>
+                    <textarea type="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
                 <span id="msg"></span>
@@ -196,17 +197,17 @@
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwuWpZJXeXTM1TElpBRZRCGzm3Ac9b8nMD_nfKD5EiucdVzL3bp8M9mVPDPAyLvXX2kiw/exec'
     const form = document.forms['submit-to-google-sheet']
-    const msg= document.getElementById("msg");
+    const msg=document.getElementById("msg")
   
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
-            msg.innerHTML = "I'll get back to you"
-                setTimeout(funtion(){
-                          msg.innerHTML = ""
-                },5000
-             form.reset()
+            msg.innerHTML="I'll get back to you"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
         })
         .catch(error => console.error('Error!', error.message))
     })
